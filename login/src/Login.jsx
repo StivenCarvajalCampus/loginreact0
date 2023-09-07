@@ -1,19 +1,20 @@
 import React from 'react'
+import'./Login.css';
+import background from "./assets/images/fondo-login.jpg";
 
 export default function Login({encabezado,images,form}) {
 return (
 <div>{encabezado}
-<div>{images}</div>
-<div>{form} </div>
+<div className='form'>{form} </div>
 </div>
 )
 }
 Login.defaultProps = {
-encabezado: "Login con react+vite",
-images: <img src="https://pics.filmaffinity.com/Mr_Robot_Serie_de_TV-978107021-large.jpg" alt="Imagen"  />,
+encabezado: <h1>react + vite +nodejs</h1>,
 form:<form>
-<input type='text' placeholder='nombre'></input> <br></br>
-<input type='password' placeholder='Contraseña'></input><br />
+    
+<input type='text' placeholder='nombre'></input> <br></br><br></br>
+<input type='password' placeholder='Contraseña'></input><br /><br />
 <button>Login</button>
 </form>
 }
